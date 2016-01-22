@@ -1,7 +1,7 @@
 body {
     line-height: 150%;
-    margin: 5%;
-    margin-top: 2.5%;
+    padding-top: 0%;
+    font-family: 'Ropa Sans', sans-serif;
 }
 
 h1,
@@ -17,7 +17,20 @@ h1 {
     font-size: 1.5em;
 }
 
-a {}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 5%;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+main a {
+    color: grey;
+}
 
 
 /*----------------------------------------- class */
@@ -34,4 +47,13 @@ a {}
     clear: both;
     max-width: 25em;
     padding-top: 1em;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: black;
+    padding: .5em;
 }
