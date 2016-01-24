@@ -33,6 +33,10 @@ figure {
     display: inline-block;
 }
 
+img:hover {
+    opacity: .5;
+}
+
 
 /*----------------------------------------- class */
 
