@@ -1,5 +1,6 @@
 body {
     line-height: 150%;
+    font-size: 90%;
     padding-top: 0%;
     font-family: 'Ropa Sans', sans-serif;
 }
@@ -31,6 +32,7 @@ main {
 figure {
     float: left;
     display: inline-block;
+    padding: .25em;
 }
 
 img:hover {
@@ -65,7 +67,7 @@ img:hover {
     .col-3,
     .col-4,
     .col-5 {
-        max-width: 50%;
+        max-width: 33.3333333%;
         float: left;
         display: inline-block;
     }
