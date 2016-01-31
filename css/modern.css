@@ -40,6 +40,19 @@ h6 {
     float: none;
 }
 
+a:link,
+a:visited {
+    color: #d10000;
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:link:active,
+a:visited:active,
+a:hover {
+    color: #d10000;
+}
+
 main {
     overflow: auto;
 }
@@ -61,15 +74,11 @@ img:hover {
     filter: grayscale(0%);
 }
 
-#currently {
-    border-top: solid 3px grey;
-}
+#currently {}
 
 #currently,
 #resume,
 #contact {
-    border-bottom: solid 3px grey;
-    padding-top: .5em;
     padding-bottom: .5em;
     box-sizing: border-box;
 }

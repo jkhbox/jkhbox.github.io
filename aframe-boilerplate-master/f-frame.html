@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>example 5</title>
+    <meta name="description" content="Example 5">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-camera fov="80" near="0.1" wasd-controls-enabled="true" cursor-visible="true" cursor="fuse: true; maxDistance: 10; timeout: 5000" position="0 0 -1"></a-camera>
+
+        <a-entity position="0 0 -10" id="cube" geometry="primitive: box" material="color: blue"></a-entity>
+
+
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+
+    <script>
+        //        document.querySelector('#cube').addEventListener('click', function () {
+        //            this.setAttribute('material', 'color', 'red');
+        //            console.log('I was clicked!');
+        //        });
+
+        $(document).ready(function () {
+            $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    $("#cube").setAttribute('material', 'color', 'red');
+                }
+            });
+        });
+
+
+
+
+
+        //        document.querySelector('#red').addEventListener('click', function () {
+        //            this.setAttribute('material', 'color', 'red');
+        //            window.alert(5 + 6);
+        //        });
+    </script>
+</body>
+
+</html>
