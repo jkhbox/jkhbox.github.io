@@ -28,6 +28,7 @@ body {
 
 header {
     margin-bottom: 1em;
+    padding-left: .25em;
 }
 
 h1,
@@ -57,16 +58,25 @@ main {
     overflow: auto;
 }
 
+.col-1,
+.col-2 {
+    overflow: auto;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+figure {
+    overflow: auto;
+    padding: .25em;
+}
+
 img {
     max-width: 100%;
+    padding-bottom: 0;
     display: block;
-    /*
-    -webkit-filter: grayscale(100%);
-filter: grayscale(100%);
-*/
     overflow: auto;
     box-sizing: border-box;
-    margin-bottom: 1em;
 }
 
 img:hover {
@@ -90,22 +100,19 @@ div {
 }
 
 
-/*----------------------------------------- class */
-
-
-/*---------------------------------------- id */
+/*-------------------------------------------------------*/
 
 @media screen and (min-width: 50em) {
+    body {
+        max-width: 60em;
+    }
     header {
+        padding-left: 1.25em;
         margin-bottom: 10em;
     }
-    #magnumopus {
-        width: 60%;
-        float: left;
-        display: inline-block;
-    }
+    main {}
     #projects {
-        width: 20%;
+        width: 80%;
         float: left;
         display: inline-block;
         padding-left: 1em;
