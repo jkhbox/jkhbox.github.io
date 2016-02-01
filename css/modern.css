@@ -42,8 +42,7 @@ h6 {
 }
 
 main {
-<<<<<<< HEAD
-    overflow: auto;
+    <<<<<<< HEAD overflow: auto;
 }
 
 .col-1,
@@ -55,9 +54,7 @@ main {
 }
 
 figure {
-=======
->>>>>>> parent of aaeb8bd... update
-    overflow: auto;
+    =======>>>>>>> parent of aaeb8bd... update overflow: auto;
     padding: .25em;
 }
 
@@ -74,14 +71,11 @@ img:hover {
     filter: grayscale(0%);
 }
 
-#currently {
-    border-top: solid 3px grey;
-}
+#currently {}
 
 #currently,
 #resume,
 #contact {
-    border-bottom: solid 3px grey;
     padding-top: .5em;
     padding-bottom: .5em;
     box-sizing: border-box;
