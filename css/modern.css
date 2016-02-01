@@ -93,12 +93,15 @@ div {
 @media screen and (min-width: 50em) {
     body {
         max-width: 60em;
+        overflow: auto;
     }
     header {
         padding-left: 1.25em;
         margin-bottom: 10em;
     }
-    main {}
+    main {
+        overflow: auto;
+    }
     #projects {
         width: 80%;
         float: left;
