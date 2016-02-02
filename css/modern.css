@@ -21,7 +21,6 @@ body {
     overflow: auto;
     max-width: 1500px;
     font-style: italic;
-    letter-spacing: .3px;
     color: #5c5c5c;
     padding: 1em;
 }
@@ -41,12 +40,31 @@ h6 {
     float: none;
 }
 
+header h1 {
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: solid 1px;
+}
+
 main {
-    <<<<<<< HEAD overflow: auto;
+    overflow: auto;
+}
+
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: red;
 }
 
 .col-1,
-.col-2 {
+.col-2,
+.col-3,
+.col-4 {
     overflow: auto;
     width: 50%;
     display: inline-block;
@@ -54,37 +72,56 @@ main {
 }
 
 figure {
-    =======>>>>>>> parent of aaeb8bd... update overflow: auto;
-    padding: .25em;
+    width: 100%;
+    overflow: hidden;
+    height: 10em;
 }
 
 img {
-    max-width: 100%;
-    padding-bottom: 0;
+    width: 30em;
     display: block;
     overflow: auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 img:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
-
-#currently {}
 
 #currently,
 #resume,
 #contact {
-    padding-top: .5em;
-    padding-bottom: .5em;
     box-sizing: border-box;
+    border-bottom: solid 1px;
+    padding: 1em 0;
+}
+
+p {
+    max-width: 20em;
 }
 
 header,
 div {
     max-width: 100%;
     box-sizing: border-box;
+}
+
+aside {
+    box-sizing: border-box;
+    background-color: white;
+    clear: both;
+}
+
+#contact {
+    border-bottom: none;
+}
+
+#projects {
+    width: 100%;
+    display: block;
+    overflow: auto;
 }
 
 
@@ -99,6 +136,19 @@ div {
         padding-left: 1.25em;
         margin-bottom: 10em;
     }
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+        overflow: auto;
+        width: 25%;
+        display: inline-block;
+        float: left;
+    }
+    .titles p {
+        display: inline-block;
+        float: left;
+    }
     main {
         overflow: auto;
     }
@@ -106,13 +156,21 @@ div {
         width: 80%;
         float: left;
         display: inline-block;
-        padding-left: 1em;
+        box-sizing: border-box;
+        padding-right: 1em;
     }
     aside {
         width: 20%;
         float: right;
         display: inline-block;
-        padding-left: 1em;
         box-sizing: border-box;
+        background-color: white;
+        clear: none;
+    }
+    #currently {
+        padding-top: 0;
+    }
+    #contact {
+        border-bottom: none;
     }
 }
