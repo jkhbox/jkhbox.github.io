@@ -1,10 +1,20 @@
+html {
+    height: 100%;
+    /*    background: url(../images/v2.PNG) no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
-    background-color: #ffffff;
     line-height: 160%;
     font-family: 'Quantico', sans-serif;
     padding: 1em;
-    color: #606060;
+    background-color: #ffffff;
+    color: #262626;
     font-size: 90%;
+    transition: 2s ease;
 }
 
 h1,
@@ -14,9 +24,10 @@ h4,
 h5,
 h6 {
     font-size: 80%;
-    margin-bottom: .5em;
+    margin-bottom: 2px;
     text-transform: uppercase;
-    color: #d43434;
+    color: #e63030;
+    font-weight: 700;
 }
 
 h1 {
@@ -24,32 +35,49 @@ h1 {
     font-size: 2em;
     color: #000000;
     font-weight: 600;
+    line-height: 110%;
 }
 
 #titles {
     font-style: italic;
+    border-top: none;
+    padding-bottom: 10em;
+}
+
+ul,
+li {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a:link,
 a:visited {
-    color: #606060;
+    color: #262626;
     text-decoration: none;
     display: inline-block;
     transition: .5s ease;
+    display: block;
+    width: 100%;
 }
 
 a:hover,
 a:active {
-    /*    font-style: italic;*/
-    letter-spacing: .2em;
+    letter-spacing: .1em;
 }
 
 section {
     margin-bottom: 1em;
 }
 
-@media screen and (min-width: 480px) {
+article {
+    display: inline-block;
+}
+
+@media screen and (min-width: 30em) {
     body {
         padding-left: 30%;
+    }
+    article {
+        max-width: 25em;
     }
 }
