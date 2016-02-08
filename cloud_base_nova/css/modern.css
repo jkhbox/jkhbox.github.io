@@ -1,109 +1,68 @@
 body {
-    line-height: 140%;
+    font-family: 'Quantico', sans-serif;
+    line-height: 150%;
+    color: grey;
     padding: 1em;
-    color: grey;
-    box-sizing: border-box;
-    overflow: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 600;
-    box-sizing: border-box;
-}
-
-#container {
-    overflow: auto;
-    display: block;
-}
-
-header {
-    overflow: auto;
-    top: 0em;
-    left: 0em;
-    display: block;
-    width: 100%;
-    background-color: white;
-    box-sizing: border-box;
-    border: solid 1px;
-}
-
-header a {
-    display: block;
-    text-align: center;
-    background-color: white;
-    box-sizing: border-box;
-    border-top: solid 1px grey;
-    width: 100%;
-}
-
-header h1 a {
-    border-top: none;
-}
-
-nav {
-    box-sizing: border-box;
-}
-
-ul {}
-
-li {}
-
-a:link,
-a:visited {
-    color: black;
-    text-decoration: none;
-    cursor: auto;
-}
-
-a:link:active,
-a:visited:active {
-    color: grey;
-}
-
-a:hover {
-    background-color: black;
-    color: white;
 }
 
 main {
+    font-size: 1.5em;
+    line-height: 160%;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: .7em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    color: #2260d1;
+}
+
+nav li a,
+h1 a {
+    padding: .5em;
     display: block;
-    z-index: -10000;
-    padding-top: 1em;
+    border-bottom: solid 1px #aaaaaa;
+}
+
+nav {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover,
+a:hover {
+    color: #2260d1;
+}
+
+nav a:hover {
+    background-color: #2260d1;
+    color: white;
+}
+
+img {
+    max-width: 100%;
 }
 
 @media screen and (min-width: 40em) {
     body {
-        overflow: auto;
-        max-width: 800px;
+        max-width: 45em;
         margin: 0 auto;
     }
-    #container {
-        margin-top: 30%;
-    }
-    main {
-        box-sizing: border-box;
-        display: inline-block;
+    nav li a {
         float: left;
-        width: 80%;
-        padding: 1em;
-        padding-top: 0em;
-    }
-    header {
-        float: left;
+        width: 25%;
         box-sizing: border-box;
-        display: inline-block;
-        width: 20%;
     }
-    header a {
-        text-align: left;
-        padding-left: 1em;
-    }
-    #menu {
-        display: block;
+    nav {
+        clear: both;
+        overflow: auto;
     }
 }
