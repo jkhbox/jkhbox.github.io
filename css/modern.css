@@ -1,33 +1,10 @@
-/*
-html {
-    background: url(../images/123.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-*/
-
-html {
-    background-color: white;
-}
-
 body {
-    line-height: 155%;
-    font-size: 90%;
-    padding-top: 0%;
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    overflow: auto;
-    max-width: 1500px;
-    font-style: italic;
-    color: #5c5c5c;
+    background-color: #ffffff;
+    line-height: 160%;
+    font-family: 'Quantico', sans-serif;
     padding: 1em;
-}
-
-header {
-    margin-bottom: 1em;
-    padding-left: .25em;
+    color: #606060;
+    font-size: 90%;
 }
 
 h1,
@@ -36,141 +13,43 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 600;
-    float: none;
-}
-
-header h1 {
-    padding-bottom: .5em;
+    font-size: 80%;
     margin-bottom: .5em;
-    border-bottom: solid 1px;
+    text-transform: uppercase;
+    color: #d43434;
 }
 
-main {
-    overflow: auto;
+h1 {
+    text-transform: none;
+    font-size: 2em;
+    color: #000000;
+    font-weight: 600;
+}
+
+#titles {
+    font-style: italic;
 }
 
 a:link,
 a:visited {
-    color: #000000;
+    color: #606060;
     text-decoration: none;
+    display: inline-block;
+    transition: .5s ease;
 }
 
 a:hover,
 a:active {
-    color: red;
+    /*    font-style: italic;*/
+    letter-spacing: .2em;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4 {
-    overflow: auto;
-    width: 50%;
-    display: inline-block;
-    float: left;
+section {
+    margin-bottom: 1em;
 }
 
-figure {
-    width: 100%;
-    overflow: hidden;
-    height: 10em;
-}
-
-img {
-    width: 30em;
-    display: block;
-    overflow: auto;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-img:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
-
-#currently,
-#resume,
-#contact {
-    box-sizing: border-box;
-    border-bottom: solid 1px;
-    padding: 1em 0;
-}
-
-p {
-    max-width: 20em;
-}
-
-header,
-div {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-aside {
-    box-sizing: border-box;
-    background-color: white;
-    clear: both;
-}
-
-#contact {
-    border-bottom: none;
-}
-
-#projects {
-    width: 100%;
-    display: block;
-    overflow: auto;
-}
-
-
-/*-------------------------------------------------------*/
-
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 480px) {
     body {
-        max-width: 60em;
-        overflow: auto;
-    }
-    header {
-        padding-left: 1.25em;
-        margin-bottom: 10em;
-    }
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4 {
-        overflow: auto;
-        width: 25%;
-        display: inline-block;
-        float: left;
-    }
-    .titles p {
-        display: inline-block;
-        float: left;
-    }
-    main {
-        overflow: auto;
-    }
-    #projects {
-        width: 80%;
-        float: left;
-        display: inline-block;
-        box-sizing: border-box;
-        padding-right: 1em;
-    }
-    aside {
-        width: 20%;
-        float: right;
-        display: inline-block;
-        box-sizing: border-box;
-        background-color: white;
-        clear: none;
-    }
-    #currently {
-        padding-top: 0;
-    }
-    #contact {
-        border-bottom: none;
+        padding-left: 30%;
     }
 }
