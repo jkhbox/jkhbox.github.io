@@ -1,0 +1,41 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+    line-height: 140%;
+    
+    transition: all 0.5s ease;
+/*
+    height: 100px;
+    background-color: red;
+    background-image: linear-gradient( to right, #121212, #717171);
+*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    display: inline-block;
+    font-weight: 600;
+    border-bottom: solid 3px white;
+}
+
+main {
+    padding: 1em;
+    z-index: 100000000;
+    background-color: black;
+    display: inline-block;
+    
+    
+}
+
+main p {
+    max-width: 20em;
+   
+}
+
