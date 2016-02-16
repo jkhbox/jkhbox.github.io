@@ -1,16 +1,14 @@
 body {
-    background-color: grey;
+    background-color: white;
     color: white;
     font-family: sans-serif;
     line-height: 140%;
-    
-    transition: all 0.5s ease;
-/*
-    height: 100px;
-    background-color: red;
-    background-image: linear-gradient( to right, #121212, #717171);
-*/
+    background-image: linear-gradient( rgba(230, 230, 230, 0.62), #ffffff);
+    cursor: none;
 }
+
+
+
 
 h1,
 h2,
@@ -30,12 +28,8 @@ main {
     z-index: 100000000;
     background-color: black;
     display: inline-block;
-    
-    
 }
 
 main p {
     max-width: 20em;
-   
 }
-
