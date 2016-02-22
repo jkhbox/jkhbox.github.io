@@ -1,17 +1,14 @@
 body {
-    line-height: 160%;
-    font-family: 'Quantico', sans-serif;
+    line-height: 150%;
+    letter-spacing: .5em;
+    font-family: monospace;
+    font-size: 85%;
     padding: 1em;
-    background-color: #ffffff;
-    color: #262626;
-    font-size: 90%;
+    background-color: #3c3c3c;
+    color: #ffffff;
+    text-transform: uppercase;
     transition: 2s ease;
-}
-
-.col-1,
-.col-2,
-.col-3 {
-    width: 100%;
+    padding: 5%;
 }
 
 h1,
@@ -19,47 +16,34 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-size: 80%;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-    color: #e63030;
-    font-weight: 700;
-}
+h6 {}
 
 h1 {
-    text-transform: none;
-    font-size: 2em;
-    color: #000000;
-    font-weight: 600;
-    line-height: 110%;
+    color: #00ff93;
+    display: inline-block;
+    float: left;
 }
 
-h3 {
-    font-size: inherit;
-    color: #262626;
-    text-transform: none;
-    font-style: italic;
-    font-weight: 100;
+h2 {
+    color: #fda61b;
 }
 
-#titles {
-    font-style: italic;
-    border-top: none;
-    padding-bottom: 10em;
-}
+#titles {}
 
 li {
-    border-bottom: solid 1px #d6d6d6;
+    overflow: auto;
+    padding-left: 1em;
 }
 
 a:link,
 a:visited {
-    color: #262626;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     transition: .5s ease;
     display: block;
+    display: inline-block;
+    float: left;
 }
 
 a:hover,
@@ -68,34 +52,18 @@ a:active {
 }
 
 section {
-    margin-bottom: 1em;
-    /*    border-top: solid 1px grey;*/
+    /*    border-top: dotted 1px #989898;*/
+    padding: .5em;
+    clear: both;
+    overflow: auto;
 }
 
-article {}
-
-.mod-col {
-    max-width: 25em;
+p {
+    color: #aaaaaa;
+    display: inline-block;
+    float: left;
 }
 
-@media screen and (min-width: 40em) {
-    article {
-        overflow: auto;
-        margin: 0 auto;
-        max-width: 55em;
-        margin: 0 auto;
-    }
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4 {
-        width: 25%;
-        float: left;
-        display: inline-block;
-        padding-right: 1em;
-        box-sizing: border-box;
-    }
-    .mod-col {
-        width: 50%;
-    }
+@media screen and (min-width: 35em) {
+    article {}
 }
