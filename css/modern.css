@@ -1,14 +1,14 @@
 body {
     line-height: 150%;
-    letter-spacing: .5em;
+    /*    letter-spacing: 2px;*/
     font-family: monospace;
     font-size: 85%;
     padding: 1em;
     background-color: #3c3c3c;
     color: #ffffff;
-    text-transform: uppercase;
+    /*    text-transform: uppercase;*/
     transition: 2s ease;
-    padding: 5%;
+    padding: 1em;
 }
 
 h1,
@@ -16,54 +16,68 @@ h2,
 h3,
 h4,
 h5,
-h6 {}
+h6 {
+    font-size: 90%;
+    text-transform: uppercase;
+    border-top: solid #ffffff 3px;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
 
 h1 {
-    color: #00ff93;
-    display: inline-block;
-    float: left;
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 700;
 }
 
-h2 {
-    color: #fda61b;
-}
-
-#titles {}
+h2 {}
 
 li {
     overflow: auto;
-    padding-left: 1em;
+    color: #adadad;
+}
+
+p {
+    overflow: auto;
+    display: none;
 }
 
 a:link,
 a:visited {
     color: #ffffff;
     text-decoration: none;
-    display: inline-block;
-    transition: .5s ease;
-    display: block;
-    display: inline-block;
-    float: left;
 }
 
 a:hover,
-a:active {
+a:active {}
+
+.highlight {
     font-style: italic;
+    font-weight: 600;
+    color: white;
 }
 
 section {
-    /*    border-top: dotted 1px #989898;*/
     padding: .5em;
     clear: both;
     overflow: auto;
+    max-width: 25em;
 }
 
-p {
-    color: #aaaaaa;
-    display: inline-block;
-    float: left;
-}
-
-@media screen and (min-width: 35em) {
-    article {}
+@media screen and (min-width: 40em) {
+    body {
+        overflow: auto;
+        padding: 1em;
+    }
+    article {
+        overflow: auto;
+    }
+    #titles {
+        margin-bottom: 100em;
+    }
+    section {
+        float: left;
+        display: inline-block;
+        clear: none;
+    }
 }
