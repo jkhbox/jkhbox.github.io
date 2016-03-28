@@ -121,7 +121,7 @@ ol {
         position: fixed;
     }
     section {
-        min-height: 60em;
+        clear: both;
     }
     .max-width-img {
         max-width: 20em;
