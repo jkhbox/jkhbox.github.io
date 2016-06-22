@@ -1,200 +1,225 @@
+body,
+html {
+    height: 100%;
+}
+
 body {
-    font-size: .8em;
-    color: grey;
     line-height: 150%;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 2;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+h2 {}
+
+h3 {
+    font-size: 22px;
+    padding-bottom: .2em;
+}
+
+#mainlogo {
+    display: block;
+    margin: 0 auto;
+    width: 5em;
+}
+
 header {
-    margin-top: 5em;
-    padding-left: 5em;
-    padding-right: 5em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    overflow: auto;
+    position: fixed;
+    width: 100%;
+    padding: .5em;
+    max-height: 3em;
+    background-color: white;
+    border-bottom: solid 1px #cfcfcf;
 }
 
-span {}
+header:hover {}
 
-a {
-    color: black;
-    text-decoration: none;
+
+/*header -----------------*/
+
+main {
+    padding: 1px;
 }
 
-a:hover {
-    opacity: .8;
+section,
+nav ul {
+    clear: both;
+    margin: 0 auto;
+}
+
+section {
+    /*    because of the fixed header i had to push the section down*/
+    padding-top: 1em;
 }
 
 img {
     max-width: 100%;
-    /*
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05),
-0 6px 20px 0 rgba(0, 0, 0, 0.05);
-*/
     display: block;
-    margin: 0 auto;
 }
 
-img:hover {}
+.box {
+    overflow: auto;
+}
 
 figure {
     width: 100%;
-    padding-bottom: 0em;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-    max-width: 25em;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: .5em;
 }
 
-figure:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+nav {
+    position: fixed;
+    top: 2.6em;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
 }
 
-main {
-    padding: 4em;
+nav ul {
+    margin: 0 auto;
+    padding: 1em;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: .25em;
-    line-height: 1;
+nav li a {
+    padding: .25em;
+    padding-left: 0;
+    color: grey;
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav li a:hover {
+    color: royalblue;
+}
+
+#resumebox {}
+
+
+/*------------------------------------------*/
+
+body {
+    line-height: 120%;
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
 h2 {
-    font-weight: 700;
-    color: black;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-figcaption {
-    padding-top: 1em;
-    padding-right: 1em;
+h3 {
+    font-size: 14px;
+    color: royalblue;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#projectbox {
+    padding: .5em;
+    padding-top: 3em;
+}
+
+#designexp .mod {
+    margin-bottom: 1em;
+}
+
+#designexp {
+    border-top: none;
+    margin-top: 3em;
+}
+
+#designexp .margin-bottom-none {
+    margin-bottom: 0;
+}
+
+.mod-container {
+    overflow: auto;
+    padding-left: 1em;
+}
+
+.title,
+span {
     color: grey;
-    font-size: .6em;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 1em;
-}
-
-hr {}
-
-li {
-    list-style: none;
-}
-
-.image-wrap {
-    padding: 1em;
-    max-width: 35em;
-    margin: 0 auto;
-}
-
-#imagebox {
-    margin-bottom: 5em;
-}
-
-.mod {
-    clear: both;
-}
-
-#mod-container {
-    padding: 2.5em 5em 2.5em 5em;
-    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: 100;
 }
 
 section {
-    margin-bottom: 1em;
-    max-width: 25em;
-    padding-top: .5em;
-    border-top: solid 1px grey;
-    padding-bottom: 2em;
-    padding-right: 1em;
-    box-sizing: border-box;
+    overflow: auto;
+    clear: both;
+    border-top: solid 1px #c7c7c7;
+    padding-bottom: 1em;
 }
 
-@media screen and (min-width: 35em) {
-    header {
-        padding-left: 5em;
-        padding-right: 5em;
-        padding-top: .5em;
-        padding-bottom: .5em;
+#resumebox {
+    padding: 1em;
+    background-color: #ededed;
+}
+
+#description {}
+
+.mod-container {
+    display: inline-block;
+    float: right;
+    width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+    body {}
+    h2 {
+        display: inline-block;
+        float: left;
     }
-    #imagebox {
-        padding: 0em;
-        overflow: auto;
+    #projectbox {
+        /*        max-width: 80em;*/
+        margin: 0 auto;
     }
-    figure {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4 {
+    .mod-container {
         display: inline-block;
         float: right;
         width: 50%;
         box-sizing: border-box;
     }
-    .col-3 {
-        float: left;
+    main {
+        margin: 0 auto;
     }
-    .col-4 {
-        float: right;
+    figure {
+        width: 50%;
+    }
+    #resumebox-innerbox {
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 }
 
-#resume {}
-
-.mod {
-    clear: both;
-    padding: 0em;
-}
-
-
-/*
 @media screen and (min-width: 55em) {
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4 {
+    figure {
+        width: 33.333333%;
+    }
+    .mod-container {
         display: inline-block;
-        float: left;
-        width: 33.3333333%;
-        box-sizing: border-box;
-    }
-    .col-4 {
-        width: 100%;
-        clear: both;
-    }
-    .col-4 figure {
-        float: left;
-        width: 33%;
-    }
-    .col-3 {}
-}
-*/
-
-#mod-container {
-    clear: both;
-    overflow: auto;
-}
-
-@media screen and (min-width: 40em) {
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4 {
-        display: inline-block;
-        float: left;
-        width: 25%;
-        box-sizing: border-box;
-    }
-    .col-4 {
-        display: inline-block;
-        float: left;
-        width: 25%;
-        clear: none;
-    }
-    .col-4 figure {
-        float: none;
-        width: 100%;
+        float: right;
+        width: 33.3333%;
     }
 }
