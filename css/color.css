@@ -1,0 +1,40 @@
+html {
+    background-color: #ffffff;
+}
+
+header {}
+
+nav {
+    background-color: white;
+}
+
+#projects {
+    background-color: white;
+}
+
+#main-nav {
+    border-bottom: solid black .25em;
+    /*    opacity: .95;*/
+}
+
+#main-nav a,
+#about a {
+    color: grey;
+}
+
+#main-nav a:hover,
+#about a:hover {
+    color: black;
+}
+
+#logo a {}
+
+#about {
+    background-color: #efefef;
+}
+
+#about p {}
+
+#main-nav .highlight {
+    /*    color: black;*/
+}

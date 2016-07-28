@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    line-height: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+#main-nav,
+#about a {
+    font-weight: 700;
+    font-size: 80%;
+    z-index: 100;
+}
+
+#main-nav a,
+#about a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+figcaption {
+    padding: 1em;
+    padding-left: 0;
+    font-size: 80%;
+}
+
+#about {
+    margin: 0 auto;
+}
+
+#about p {
+    font-size: 90%;
+    max-width: 40em;
+}
