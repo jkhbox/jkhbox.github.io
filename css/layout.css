@@ -11,7 +11,7 @@ header {
     /*    height: 150px;*/
     height: 78vh;
     /*    margin-top: -10vh;*/
-    margin-top: 15vh;
+    padding-top: 15vh;
     box-sizing: border-box;
 }
 
@@ -148,7 +148,7 @@ width: 50%;
     }
     #about-inner {
         /*        margin: 0 auto;*/
-/*        padding: 1em 5%;*/
+        /*        padding: 1em 5%;*/
     }
 }
 
