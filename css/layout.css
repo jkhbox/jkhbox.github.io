@@ -9,20 +9,25 @@ body {
 
 header {
     /*    height: 150px;*/
-    height: 100vh;
-    margin-top: -10vh;
+    height: 78vh;
+    /*    margin-top: -10vh;*/
+    margin-top: 15vh;
+    box-sizing: border-box;
 }
 
 header img {
+    /*
     position: relative;
-    z-index: -1;
-    top: 30vh;
+z-index: -1;
+top: 30vh;
+*/
 }
 
 #main-nav {
     overflow: auto;
     padding: 1em 5%;
     z-index: 10000000000;
+    background-color: #e8e8e8;
 }
 
 .fixed-nav {
@@ -62,6 +67,7 @@ figure {}
 img {
     max-width: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 #logo {
@@ -83,6 +89,9 @@ iframe {
 #about #portrait {
     width: 4em;
     padding-bottom: 1em;
+    float: left;
+    clear: both;
+    margin-right: 1em;
 }
 
 #header-inner {
@@ -122,8 +131,10 @@ width: 50%;
     }
     #projects {}
     .project {
-        float: left;
-        display: inline-block;
+        /*        float: left;*/
+        /*        display: inline-block;*/
+        margin: 0 auto;
+        margin-bottom: 5%;
         /*        width: 50%;*/
     }
     figure {
@@ -132,14 +143,18 @@ width: 50%;
     #main-nav {
         padding: 1em 5%;
     }
+    #header-inner {
+        padding: 1em 5%;
+    }
     #about-inner {
-        margin: 0 auto;
+        /*        margin: 0 auto;*/
+/*        padding: 1em 5%;*/
     }
 }
 
 @media screen and (min-width: 50em) {
     #main-nav {
-        padding: 1em 3.5%;
+        /*        padding: 1em 3.5%;*/
     }
     .project {
         /*        width: 20%;*/

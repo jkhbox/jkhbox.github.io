@@ -27,24 +27,26 @@
             <p>Graphic Developer</p>
 
         </div>
-        <img src="img/logo3.png">
-    </header>
-    <nav id="main-nav">
+        <nav id="main-nav">
 
-        <div id="logo">
-            <a href="#top"><img src="img/logo3small.png"> </a>
-        </div>
+            <div id="logo">
+                <a href="#top"><img src="img/logo3small.png"> </a>
+            </div>
 
 
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li>
-                <a class="highlight" href="mailto:jameshillmann.me@gmail.com?subject=SweetWords">
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a class="highlight" href="mailto:jameshillmann.me@gmail.com?subject=SweetWords">
 Contact</a>
-            </li>
-        </ul>
-    </nav>
+                </li>
+            </ul>
+        </nav>
+        <iframe src="https://player.vimeo.com/video/176679182" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    </header>
+
     <main>
         <div id="projects">
 
@@ -99,18 +101,20 @@ Contact</a>
         <div id="about">
             <div id="about-inner">
                 <img id="portrait" src="img/portrait.png" alt="portrait">
+                <br>
                 <h2>James Hillmann</h2>
                 <p>Graphic Developer</p>
                 <br>
                 <p>James Hillmann is a Front End Web Developer / Motion Designer. He is an alumni of of Montserrat College of Art where he graduated with a BFA in Graphic Design. Through his experience there he received rewards such as typography merit awards, web merit awards and a scholarship for his drawing skills. He has a year of in-house design experience along with a handful of client design experience. His favorite programs to work with are Sketch, Illustrator, Brackets, and After Effects. Currently he is situated in Springfield MA and when he is not creating he subscribes to nutrition and fitness hobbies. Feel free to contact James just to say hello or for hire. </p>
+                <ul>
+                    <li>
+                        <a href="mailto:jameshillmann.me@gmail.com?subject=SweetWords">Email James</a></li>
+                    <li><a href=" https://twitter.com/hillmannjames ">Social Media</a></li>
+
+                </ul>
             </div>
 
-            <ul>
-                <li>
-                    <a href="mailto:jameshillmann.me@gmail.com?subject=SweetWords">Email James</a></li>
-                <li><a href=" https://twitter.com/hillmannjames ">Social Media</a></li>
 
-            </ul>
 
 
         </div>
@@ -125,7 +129,7 @@ Contact</a>
         $(window).scroll(function () {
             //$('#mine').text($(document).scrollTop());
             $('#main-nav').addClass('fixed-nav');
-            if ($(document).scrollTop() < 572.5) {
+            if ($(document).scrollTop() < 100) {
                 $('#main-nav').removeClass('fixed-nav');
             }
         });
